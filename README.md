@@ -73,4 +73,26 @@ If an attacker places malicious content in the URL fragment, and that value reac
 ## One-Line Summary
 XSS is browser-based script injection, a source is attacker-controlled input, a sink is a dangerous output point, and DOM XSS happens when unsafe JavaScript moves data from source to sink.
 
+## Challenges
+
+## Iframe payload 
+I tested DOM XSS with an iframe-based payload on JuiceShop.
+The area/access point to perform my first challenge was the search bar.
+I went to the serach bar and typed <iframe src="javascript:alert('xss')"> payload and hit enter.
+Boom, XSS challenge successfull. 
+Pop-up message appeared showing the message 'XSS'.
+
+## Iframe XSS Flow
+Iframe-based XSS happens when attacker-controlled source data reaches a dangerous sink through an iframe and executes malicious JavaScript in the browser.
+**Source:** untrusted input such as URL data or user-controlled values
+
+**Sink:** unsafe DOM usage like `innerHTML` or `document.write()`
+
   
+```mermaid
+flowchart 
+    A[Attacker Input] --> B[Source]
+    B --> C[Iframe]
+    C --> D[Sink]
+    D --> E[Malicious JavaScript Executes]
+```
