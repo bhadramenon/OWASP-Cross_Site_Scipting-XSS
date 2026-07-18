@@ -59,7 +59,7 @@ This is a reflected XSS issue because the payload is sent in the URL and then re
 
 The browser runs the injected content because the application does not encode or sanitize the input properly.
 
-Burp Suite helped me see the request clearly and understand where the value was going.
+
 
 ### Why it matters
 Reflected XSS can be dangerous because a user may click a crafted link and unknowingly run attacker-controlled JavaScript in their browser.
