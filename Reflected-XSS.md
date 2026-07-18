@@ -62,7 +62,7 @@ The browser runs the injected content because the application does not encode or
 
 
 ### Why it matters
-Reflected XSS can be dangerous because a user may click a crafted link and unknowingly run attacker-controlled JavaScript in their browser.
+Reflected XSS can be dangerous because a user may click a crafted link and unknowingly run attacker controlled JavaScript in their browser.
 
 This can affect user data, page behavior, and trust in the application.
 
