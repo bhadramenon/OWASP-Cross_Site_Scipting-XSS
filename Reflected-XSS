@@ -3,4 +3,11 @@
 **Goal:** To understand how reflected XSS works in the order tracking page of OWASP Juice Shop
 
 ##Tools Used: 
-Web browser: To 
+Web browser: To navigate the web application and test different XSS payloads. 
+Developer Tools: Inspect the Javascript code and understand the HTML content present on the web application. 
+Burpsuite: Helps to intercept, analyze, modify, and test HTTP/HTTPS traffic to identify vulnerabilities.
+
+##What I did
+
+
+
