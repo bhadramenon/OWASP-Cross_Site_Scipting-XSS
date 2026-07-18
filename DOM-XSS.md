@@ -84,7 +84,7 @@ XSS is browser-based script injection, a source is attacker-controlled input, a 
 I tested DOM XSS with an iframe-based payload on JuiceShop.
 The area/access point to perform my first challenge was the search bar.
 I went to the serach bar and typed <iframe src="javascript:alert('xss')"> payload and hit enter.
-Boom, XSS challenge successfull. 
+Boom, XSS challenge successful. 
 Pop-up alert appeared showing the message 'XSS'.
 That showed me the app was using the input in an unsafe way inside the browser.
 This is a DOM XSS issue because the problem happens on the client side.
