@@ -93,7 +93,9 @@ This is a DOM XSS issue because the problem happens on the client side.
 
 ## Iframe XSS Flow
 Iframe-based XSS happens when attacker-controlled source data reaches a dangerous sink through an iframe and executes malicious JavaScript in the browser.
-**Source:** untrusted input such as URL data or user-controlled values
+
+**Source:** untrusted input such as URL data or user-controlled values.
+
 
 **Sink:** unsafe DOM usage like `innerHTML` or `document.write()`
 
