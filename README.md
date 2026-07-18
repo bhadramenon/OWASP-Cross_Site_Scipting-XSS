@@ -80,7 +80,11 @@ I tested DOM XSS with an iframe-based payload on JuiceShop.
 The area/access point to perform my first challenge was the search bar.
 I went to the serach bar and typed <iframe src="javascript:alert('xss')"> payload and hit enter.
 Boom, XSS challenge successfull. 
-Pop-up message appeared showing the message 'XSS'.
+Pop-up alert appeared showing the message 'XSS'.
+That showed me the app was using the input in an unsafe way inside the browser.
+This is a DOM XSS issue because the problem happens on the client side.
+
+<img width="1439" height="520" alt="Screenshot 2026-07-14 at 5 43 17 PM" src="https://github.com/user-attachments/assets/291475a2-b8f1-40eb-84c4-56ec181ab99a" />
 
 ## Iframe XSS Flow
 Iframe-based XSS happens when attacker-controlled source data reaches a dangerous sink through an iframe and executes malicious JavaScript in the browser.
