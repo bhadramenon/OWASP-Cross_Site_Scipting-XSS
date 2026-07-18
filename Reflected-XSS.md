@@ -5,6 +5,7 @@ Understand how reflected XSS works in the order tracking page of OWASP Juice Sho
 
 ## Tools Used: 
 Web browser: To navigate the web application and test different XSS payloads. 
+
 Developer Tools: Inspect the Javascript code and understand the HTML content present on the web application. 
 
 
