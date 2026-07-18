@@ -2,11 +2,11 @@
 
 **OWASP Category:** A03:2025- XSS(Cross Site Scripting)
 
-**Lab:** Kali Linux + Docker enviornment + OWASP Juice Shop + Burpsuite
+**Lab:** Kali Linux + Docker enviornment + OWASP Juice Shop 
 
-**Date:**
+**Date:** 18 July 2026
 
-**Status:**
+**Status:** Completed
 
 -----
 
