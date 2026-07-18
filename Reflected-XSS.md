@@ -6,7 +6,7 @@ Understand how reflected XSS works in the order tracking page of OWASP Juice Sho
 ## Tools Used: 
 Web browser: To navigate the web application and test different XSS payloads. 
 Developer Tools: Inspect the Javascript code and understand the HTML content present on the web application. 
-Burpsuite: Helps to intercept, analyze, modify, and test HTTP/HTTPS traffic to identify vulnerabilities.
+
 
 
 ### What I did
@@ -42,11 +42,12 @@ Burpsuite: Helps to intercept, analyze, modify, and test HTTP/HTTPS traffic to i
 
 Then I replaced the track ID in the URL with an iframe-based XSS payload.
 
-
-I also watched the request flow in Burp Suite to understand how the input was being passed.
+<iframe src="javascript:alert('xss')">
 
 ### What I saw
 After loading the page, the browser showed a popup with `xss`.
+
+<img width="1008" height="616" alt="Screenshot 2026-07-18 at 11 57 36 AM" src="https://github.com/user-attachments/assets/b7014c27-ff1e-46a4-8e58-2a823898cf73" />
 
 That told me the input was being reflected back and executed in the browser.
 
