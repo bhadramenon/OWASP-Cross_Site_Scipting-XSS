@@ -3,14 +3,33 @@
 ### Goal
 Understand how reflected XSS works in the order tracking page of OWASP Juice Shop.
 
-##Tools Used: 
+## Tools Used: 
 Web browser: To navigate the web application and test different XSS payloads. 
 Developer Tools: Inspect the Javascript code and understand the HTML content present on the web application. 
 Burpsuite: Helps to intercept, analyze, modify, and test HTTP/HTTPS traffic to identify vulnerabilities.
 
 
 ### What I did
-I opened the order tracking feature and used the track ID from my order.
+1. Add few products into the basket
+   
+<img width="873" height="570" alt="Screenshot 2026-07-18 at 11 34 44 AM" src="https://github.com/user-attachments/assets/ec7d8cbe-30ac-45b1-83bc-8e9fc4e00ace" />
+
+2. Add new address to order the products.
+
+<img width="437" height="492" alt="Screenshot 2026-07-18 at 11 33 54 AM" src="https://github.com/user-attachments/assets/e6aae74a-99c7-4db3-a15d-e125f858db9a" />
+
+3. Choose the delivery mode.
+   
+<img width="872" height="584" alt="Screenshot 2026-07-18 at 11 50 03 AM" src="https://github.com/user-attachments/assets/d519991f-1610-4966-ac57-868d9bc6ac7b" />
+
+4. Tracking id is obtained for the ordered products.
+
+<img width="876" height="454" alt="Screenshot 2026-07-18 at 2 40 32 PM" src="https://github.com/user-attachments/assets/646fa9fc-946e-4502-9ad1-31eb8c431aea" />
+
+5. I opened the order tracking feature and used the track ID from my order.
+
+<img width="1008" height="45" alt="Screenshot 2026-07-18 at 12 01 12 PM" src="https://github.com/user-attachments/assets/9f1e77e7-c9ab-447d-a401-40354994ac14" />
+
 
 Then I replaced the track ID in the URL with an iframe-based XSS payload.
 
