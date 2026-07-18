@@ -1,7 +1,9 @@
 # OWASP-Cross_Site_Scipting-XSS
 
 **OWASP Category:** A03:2025- XSS(Cross Site Scripting)
+
 **Lab:** Kali Linux + Docker enviornment + OWASP Juice Shop + Burpsuite
+
 **Date:**
 **Status:**
 
