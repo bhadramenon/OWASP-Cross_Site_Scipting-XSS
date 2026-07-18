@@ -1,4 +1,4 @@
-# OWASP-Cross_Site_Scipting-XSS
+# OWASP-Cross_Site_Scipting
 
 **OWASP Category:** A03:2025- XSS(Cross Site Scripting)
 
