@@ -33,6 +33,7 @@ Burpsuite: Helps to intercept, analyze, modify, and test HTTP/HTTPS traffic to i
 <img width="876" height="454" alt="Screenshot 2026-07-18 at 2 40 32 PM" src="https://github.com/user-attachments/assets/646fa9fc-946e-4502-9ad1-31eb8c431aea" />
 
 
+
 5. I opened the order tracking feature and used the track ID from my order.
 
 
